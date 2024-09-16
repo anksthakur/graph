@@ -39,7 +39,7 @@ const BarChart: React.FC = () => {
       options3d: {
         enabled: true,
         alpha: 20,  // Rotation angle around the x-axis
-        beta: 10,   // Rotation angle around the y-axis
+        beta: 10,   // Rotation y-axis
         depth: 90   // Depth of the chart
       }
     },
@@ -68,7 +68,7 @@ const BarChart: React.FC = () => {
         type: 'column',  // for vertical bars
         name: 'Sales',
         data: selectedMonth ? filteredData : yearData.map(data => data.value),
-        colorByPoint: true,  // Each column can have its own color
+        colorByPoint: true,
         colors: ['#7cb5ec', '#434348', '#90ed7d', '#f7a35c', '#8085e9', '#f15c80', '#e4d354', '#2b908f', '#f45b5b', '#91e8e1', '#9c27b0', '#ff9800']
       }
     ]
